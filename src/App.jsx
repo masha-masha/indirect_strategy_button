@@ -13,7 +13,8 @@ function App() {
  };
 
  return (
-  <div className="container">
+  <>
+   <div className="container">
    <h1>Система Брайна Ино и Питера Шмидта</h1>
    <p>
     Предположим, у вас есть идея, но вы зашли в тупик. Вы не знаете, куда двигаться
@@ -24,8 +25,9 @@ function App() {
    <button className="btn" onClick={getText}>
     Жать
    </button>
-   <div className="instruction">{text}</div>
   </div>
+  <div className="instruction">{text}</div>
+  </>
  );
 }
 

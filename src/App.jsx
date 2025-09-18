@@ -2,7 +2,7 @@ import { useState } from "react";
 import { data } from "./data/data";
 function App() {
  const getRandomNumberBetweenOneAnd114 = () =>
-  Math.floor(Math.random() * 114) + 1;
+  Math.floor(Math.random() * 115) + 1;
 
  const [text, setText] = useState("");
 
@@ -26,7 +26,7 @@ function App() {
     Жать
    </button>
   </div>
-  <div className="instruction">{text}</div>
+  <div className="instruction">{text || "..."}</div>
   </>
  );
 }
